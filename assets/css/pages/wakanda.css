@@ -1,0 +1,152 @@
+/* section intro-presentation-black-panther */
+
+.text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro__presentation__black__panther__content {
+    display: grid;
+    align-items: center;
+}
+
+.intro__presentation__black__panther__img,
+.intro__presentation__black__panther__text {
+    grid-area: 1/1;
+}
+
+.intro__presentation__black__panther__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro__presentation__black__panther__paragraphe {
+    max-width: 400px;
+}
+
+
+/* intro-presentation-black-panther  et section principal police et texte */
+
+.main-section p,
+#intro__presentation__black__panther p {
+    text-align: justify;
+}
+
+
+/* section principal */
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.left-section,
+.right-section {
+    width: 100%;
+}
+
+.main__content__content {
+    display: grid;
+}
+
+.main__content__text,
+.main__content__img {
+    grid-area: 1/1;
+}
+
+
+/* video dans main section */
+
+.origines-video,
+.force-militaire-img {
+    margin: 40px 0;
+}
+
+.video-container {
+    position: relative;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.play-button img {
+    width: 60px;
+}
+
+#myVideo.controls-visible {
+    display: block;
+}
+
+
+/*media query laptop L*/
+
+@media (max-width: 1700px) {}
+
+
+/*media query laptop */
+
+@media (max-width: 1350px) {}
+
+@media (max-width: 1020px) {
+    /* introduction black panther */
+    .intro__presentation__black__panther__paragraphe {
+        max-width: 300px;
+    }
+}
+
+
+/*media query tablette*/
+
+@media (max-width: 864px) {
+    /* introduction black panther */
+    .intro__presentation__black__panther__paragraphe {
+        max-width: 250px;
+    }
+    /* main section */
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro__presentation__black__panther__text {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {
+    /* introduction black panther */
+    .intro__presentation__black__panther__paragraphe {
+        max-width: 100%;
+    }
+    /* main section */
+    .main-section {
+        gap: 0;
+    }
+    .main__content__img,
+    .intro__presentation__black__panther__img {
+        opacity: 50%;
+        z-index: -1;
+    }
+    .origines {
+        padding-top: 10%;
+    }
+}

@@ -1,0 +1,65 @@
+/* Animation fade in avec slide from left */
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-slide {
+    opacity: 0;
+    animation: fadeInSlide 1s ease-out forwards;
+}
+
+
+/* texte surligner au survol */
+
+.underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.underline:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* animation bouton */
+
+
+/* Style initial du bouton */
+
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Effet hover (survol) du bouton */
+
+.btn:hover {
+    box-shadow: 0 0 10px 2px var(--pink-color);
+}

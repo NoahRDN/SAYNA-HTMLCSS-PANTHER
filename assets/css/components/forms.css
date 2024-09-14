@@ -1,0 +1,47 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form *,
+.titre-form {
+    font-family: 'cantarell';
+}
+
+.titre-form {
+    text-align: center;
+}
+
+input,
+textarea {
+    /* width: 520px; */
+    width: 100%;
+    max-width: 520px;
+    height: 56px;
+    border: 1px solid white;
+    border-radius: 38px;
+    background: transparent;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding: 0px 30px;
+    margin: 20px 0;
+    font-size: var(--size-texte);
+}
+
+textarea {
+    padding: 20px 30px;
+    height: 300px;
+    resize: none;
+}
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {
+    form {
+        padding: 0 5%;
+    }
+}
